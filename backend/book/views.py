@@ -12,7 +12,7 @@ class BookList(ListAPIView):
 
 class BookCreate(CreateAPIView):
     queryset = BookModel.objects.all()
-    serializer_class = BookSeializerCreate
+    serializer_class = BookSeializer
     permission_classes = [IsSuperUser, IsStaff]
 
 
